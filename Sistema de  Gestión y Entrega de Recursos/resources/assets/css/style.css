@@ -1,0 +1,572 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#uHeader {
+    height: 10%;
+    width: 100%;
+}
+
+
+/***************************
+***************************/
+
+#uMdi {
+    height: 90%;
+    position: relative;
+}
+
+.uLateral-lg {
+    height: 100%;
+    width: 4.8%;
+    float: left;
+    transition: width .3s;
+    transition: width .3s ease-in-out;
+}
+
+.uLateral-sm {
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    z-index: 2;
+    opacity: .95;
+    transition: width .3s;
+    transition: width .3s ease-in-out;
+}
+
+.uLateral {
+    width: 0px !important;
+}
+
+.u-Lateral {
+    width: 100% !important;
+}
+
+.uMain-lg {
+    height: 100%;
+    width: 95.2%;
+    float: right;
+    transition: width .3s;
+    transition: width .3s ease-in-out;
+    overflow: auto;
+}
+
+.uMain-sm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: width .3s;
+    transition: width .3s ease-in-out;
+    overflow: auto;
+}
+
+.uMain {
+    width: 100% !important;
+}
+
+
+/***************************
+***************************/
+
+.uLateral-lg>div>ul,
+.uLateral-sm>div>ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fiList a>div {
+    padding: 3px 3px !important;
+    margin-left: 5px;
+    border-radius: 0px !important;
+}
+
+.fiList a>div h5,
+.fiList a>div i {
+    font-size: 15px !important;
+}
+
+.fiList li {
+    margin: 2px auto !important;
+    padding: 2px 5px !important;
+    padding-left: 20px !important;
+}
+
+.fiList li h6 {
+    font-size: 13px;
+}
+
+.btnList {
+    cursor: pointer;
+}
+
+.ulistMenu {
+    padding-left: 10px;
+}
+
+.btnList-menu {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+
+.fiList a>div {
+    padding: 8px 3px;
+}
+
+.fiList a:hover>div>h5 {
+    font-weight: bold;
+    transition: all .2s;
+}
+
+.fiList a:hover>div {
+    border-left: 2px solid #fff;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 3px;
+    transition: all .1s;
+}
+
+.fiList .iconMenu {
+    color: #fff
+}
+
+.fiList li {
+    margin-top: 5px;
+    padding-left: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.fiList li:hover {
+    background-color: rgb(158, 155, 145);
+    border-radius: 3px;
+    border-left: 2px solid #fff;
+}
+
+.contensMenuLat {
+    overflow: hidden;
+    height: 100%;
+}
+
+.uLateral-lg:hover .contensMenuLat {
+    overflow: auto !important;
+}
+
+
+/***************************
+
+***************************/
+
+.centrar-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uCentrarCustom {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.uLink {
+    background: #f44;
+    margin: auto 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-decoration: none !important;
+    color: #333;
+    transition: all .3s;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.uLink:hover {
+    background: #333;
+    color: #4ff;
+    border-radius: 10px;
+}
+
+.uGreen {
+    background: #0a537e;
+}
+
+.uGreenBorder {
+    border-color: #03629a !important;
+}
+
+.uGroupInput {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+#uScroll {
+    overflow: hidden;
+}
+
+#uScroll:hover {
+    overflow: auto;
+}
+
+
+/****************************************
+**** SOLO PARA LA PANTALLA DE INICIO ****
+****************************************/
+
+.login-body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato, sans-serif;
+    background: url("../../../public/images/fondo.jpg") 0/cover fixed;
+    /*background-image: linear-gradient(black, rgba(78, 148, 189, .75), black);*/
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-form .form-field {
+    position: relative;
+    margin: 20px 0 8px 0;
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+}
+
+.login-form .form-field::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.4s ease;
+}
+
+.login-form .form-field:focus-within::after {
+    transform: scaleX(1);
+}
+
+.login-form .form-field input {
+    padding-left: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.login-form .form-field input:focus~label,
+.login-form .form-field input:not(:placeholder-shown)~label {
+    top: -5px;
+    font-size: 15px;
+}
+
+.login-form .form-field input:valid~label {
+    color: #3498db;
+}
+
+.login-form .form-field label {
+    position: absolute;
+    left: 32px;
+    top: 24px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.login-form .btn {
+    position: relative;
+    width: 100%;
+    padding: 6px 0;
+    margin: 36px 0 18px 0;
+    font-size: 1.2em;
+    color: white;
+    background: transparent;
+    border: 2px solid #3398db;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.login-form .btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(51, 152, 219, 0.5), transparent);
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.login-form .btn:hover {
+    box-shadow: 0 0 20px 10px rgba(51, 152, 219, 0.5);
+}
+
+.login-form .btn:hover::before {
+    transform: translateX(100%);
+}
+
+@media (max-width:758px) {
+    #inst-menu {
+        display: none;
+    }
+}
+
+
+/****************************************
+FIN DE LOS CSS PARA LA PANTALLA DE INICIO
+****************************************/
+
+.alturaClass {
+    min-height: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#my_titulo span {
+    color: white;
+    font-weight: bold;
+}
+
+.my_salir {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.my_salir:hover {
+    color: red;
+}
+
+.reStyle {
+    text-align: right;
+}
+
+
+/* NUEVO MENU*/
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: #008DE7;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.page-container.sidebar-collapsed {
+    padding-left: 65px;
+    transition: all 100ms linear;
+    transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back {
+    padding-left: 280px;
+    transition: all 100ms linear;
+}
+
+.page-container.sidebar-collapsed .sidebar-menu {
+    width: 65px;
+    transition: all 100ms ease-in-out;
+    transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back .sidebar-menu {
+    width: 280px;
+    transition: all 100ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed .sidebar-icon {
+    transform: rotate(90deg);
+    transition: all 300ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed-back .sidebar-icon {
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed .logo {
+    padding: 21px;
+    height: 136px;
+    box-sizing: border-box;
+    transition: all 100ms ease-in-out;
+    transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back .logo {
+    width: 100%;
+    padding: 21px;
+    height: 136px;
+    box-sizing: border-box;
+    transition: all 100ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed #logo {
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed-back #logo {
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+    transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed #menu span {
+    opacity: 0;
+    transition: all 50ms linear;
+}
+
+.page-container.sidebar-collapsed-back #menu span {
+    opacity: 1;
+    transition: all 200ms linear;
+    transition-delay: 300ms;
+}
+
+.sidebar-menu {
+    position: absolute;
+    float: left;
+    width: 280px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /*background-color: #303641;*/
+    background-color: #0a537e;
+    color: #aaabae;
+    font-family: "Segoe UI";
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#menu li {
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(53, 56, 63, 0.7);
+    padding: 0;
+}
+
+#menu li ul {
+    opacity: 0;
+    height: 0px;
+}
+
+#menu li a {
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding: 10px 22px;
+    color: #ffffff;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#menu li a:hover {
+    color: orange;
+    background-color: #0a537e;
+    font-weight: bold;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+#menu li.active>a {
+    background-color: #2b303a;
+    color: #ffffff;
+}
+
+#menu ul li {
+    background-color: #2b303a;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li ul {
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: -1px;
+    background-color: #2b303a;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+#menu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#menu li li ul {
+    left: 100%;
+    visibility: hidden;
+    top: -1px;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+#menu li li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#menu .fa {
+    margin-right: 5px;
+}
+
+.logo {
+    width: 100%;
+    padding: 21px;
+    box-sizing: border-box;
+}
+
+.sidebar-icon {
+    position: relative;
+    float: right;
+    margin-top: 32px;
+    border: 1px solid #454a54;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+    padding: 6px 8px;
+    border-radius: 3px;
+    color: #888;
+    background-clip: padding-box;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}

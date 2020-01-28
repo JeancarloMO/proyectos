@@ -1,0 +1,1 @@
+<script src="resources/assets/js/newjs.js"></script>

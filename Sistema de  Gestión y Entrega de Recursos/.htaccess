@@ -1,0 +1,14 @@
+#Impedir que se pueda ver el listado de contenido de un directorio
+
+Options All -Indexes
+
+#URLS AMIGABLES
+# Activar RewriteEngine
+
+RewriteEngine On
+
+# RewriteRule ^(\w+)$ index.php?action=$1
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?action=$1

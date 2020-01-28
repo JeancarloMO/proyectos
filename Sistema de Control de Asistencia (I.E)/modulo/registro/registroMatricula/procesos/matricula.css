@@ -1,0 +1,22 @@
+.active {
+    font-weight: bold !important;
+}
+
+.nav-link {
+    color: #454444;
+}
+
+#ctitulo {
+    background: #00695C;
+}
+
+#ctitulo span{
+    color: white;
+    font-weight: bold;
+}
+
+#formregistro{
+    pointer-events: none;
+    opacity: 0.8;
+}
+
